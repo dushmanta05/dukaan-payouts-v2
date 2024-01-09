@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dukaan Payouts V2",
-  description: "",
+  description: "Demo page for Dukaan payouts (v2)",
 };
 
 export default function RootLayout({ children }) {

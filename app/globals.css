@@ -18,10 +18,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #fafbfb;
+}
+
+.shadow-box {
+  box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
 }
