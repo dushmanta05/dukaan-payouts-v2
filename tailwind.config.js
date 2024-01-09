@@ -16,6 +16,8 @@ module.exports = {
         primary: "#1E2640",
         secondary: "#FAFBFB",
         light: "D9D9D9",
+        navSecondary: "#353C53",
+        idColor: "#146EB4",
       },
     },
   },
