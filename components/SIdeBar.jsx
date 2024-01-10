@@ -200,7 +200,7 @@ const SideBar = () => {
 
             <p className="font-extralight text-sm">Analytics</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded bg-white bg-opacity-10 w-full">
+          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded bg-white bg-opacity-10 w-full">
             <svg
               width="20"
               height="20"
