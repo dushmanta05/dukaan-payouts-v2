@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const MobileSideBar = () => {
   return (
-    <div className="flex h-[100vh] w-[224px] bg-primary fixed z-50  py-[16px] text-white px-[10px] gap-[16px] flex-col items-center justify-between">
+    <div className="flex h-[100vh] w-[224px] bg-primary text-white fixed z-50  py-[16px] px-[10px] gap-[16px] flex-col items-center justify-between">
       <div className="flex flex-col gap-[24px] w-full items-start justify-center">
         <div className="flex justify-evenly px-[8px] items-center w-full gap-[4px]">
           <Image src="/navbar/image.png" width={39} height={39} />
           <div className="flex flex-col pl-[6px] w-full">
-            <p>Nishayam</p>
-            <p className="underline">Visit Store</p>
+            <p className="font-medium text-base">Nishayam</p>
+            <p className="font-extralight text-sm underline ">Visit Store</p>
           </div>
           <svg
             width="16"
@@ -23,8 +23,8 @@ const MobileSideBar = () => {
             />
           </svg>
         </div>
-        <div className="flex flex-col gap-[4px] items-start">
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+        <div className="flex flex-col gap-[4px] w-full">
+          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded">
             <svg
               width="18"
               height="18"
@@ -37,9 +37,9 @@ const MobileSideBar = () => {
                 fill="white"
               />
             </svg>
-            <p>Home</p>
+            <p className="font-extralight text-sm">Home</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded">
             <svg
               width="20"
               height="20"
@@ -72,9 +72,9 @@ const MobileSideBar = () => {
                 />
               </g>
             </svg>
-            <p>Orders</p>
+            <p className="font-extralight text-sm">Orders</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded">
             <svg
               width="20"
               height="20"
@@ -90,9 +90,9 @@ const MobileSideBar = () => {
               </g>
             </svg>
 
-            <p>Products</p>
+            <p className="font-extralight text-sm">Products</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded">
             <svg
               width="20"
               height="20"
@@ -128,9 +128,9 @@ const MobileSideBar = () => {
               </g>
             </svg>
 
-            <p>Delivery</p>
+            <p className="font-extralight text-sm">Delivery</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded">
             <svg
               width="20"
               height="20"
@@ -160,9 +160,9 @@ const MobileSideBar = () => {
               </g>
             </svg>
 
-            <p>Marketing</p>
+            <p className="font-extralight text-sm">Marketing</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded">
             <svg
               width="20"
               height="20"
@@ -198,9 +198,9 @@ const MobileSideBar = () => {
               </g>
             </svg>
 
-            <p>Analytics</p>
+            <p className="font-extralight text-sm">Analytics</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded bg-white bg-opacity-10 w-full">
             <svg
               width="20"
               height="20"
@@ -216,9 +216,9 @@ const MobileSideBar = () => {
               />
             </svg>
 
-            <p>Payments</p>
+            <p className=" text-sm">Payments</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded">
             <svg
               width="20"
               height="20"
@@ -234,9 +234,9 @@ const MobileSideBar = () => {
               </g>
             </svg>
 
-            <p>Tools</p>
+            <p className="font-extralight text-sm">Tools</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded">
             <svg
               width="20"
               height="20"
@@ -271,9 +271,9 @@ const MobileSideBar = () => {
               </defs>
             </svg>
 
-            <p>Discounts</p>
+            <p className="font-extralight text-sm">Discounts</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded">
             <svg
               width="20"
               height="20"
@@ -309,9 +309,9 @@ const MobileSideBar = () => {
               </g>
             </svg>
 
-            <p>Audience</p>
+            <p className="font-extralight text-sm">Audience</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded">
             <svg
               width="20"
               height="20"
@@ -350,9 +350,9 @@ const MobileSideBar = () => {
               </defs>
             </svg>
 
-            <p>Appearance</p>
+            <p className="font-extralight text-sm">Appearance</p>
           </div>
-          <div className="flex justify-start items-center gap-[12px] px-[16px] py-[8px] rounded">
+          <div className="flex justify-start items-center gap-[12px] w-full px-[16px] py-[8px] rounded">
             <svg
               width="20"
               height="20"
@@ -370,7 +370,7 @@ const MobileSideBar = () => {
               </g>
             </svg>
 
-            <p>Plugins</p>
+            <p className="font-extralight text-sm">Plugins</p>
           </div>
         </div>
       </div>
@@ -391,8 +391,8 @@ const MobileSideBar = () => {
           />
         </svg>
         <div>
-          <p>Availble credits</p>
-          <p>222.10</p>
+          <p className="text-sm font-extralight">Availble credits</p>
+          <p className="text-base">222.10</p>
         </div>
       </div>
     </div>
