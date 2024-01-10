@@ -106,8 +106,8 @@ const Dashboard = () => {
           </div>
           <div></div>
           <div className="overflow-x-auto">
-            <div className="min-w-[830px]">
-              <div className="flex gap-[40px] px-[12px] py-[10px] h-[48px] bg-secondary rounded ">
+            <div className="min-w-[660px]">
+              <div className="flex gap-[20px] md:gap-[40px] px-[12px] py-[10px] h-[48px] bg-secondary rounded ">
                 <div className="w-full flex">
                   <p className="text-subtitle font-normal text-base">
                     Order ID
@@ -138,7 +138,7 @@ const Dashboard = () => {
                   </p>
                 </div>
                 <div className="w-full flex justify-end items-center">
-                  <div className="flex items-center justify-start gap-[3px]">
+                  <div className="inline-flex items-center justify-start gap-[3px]">
                     <p className="text-subtitle font-normal text-base">
                       Transaction fees
                     </p>
