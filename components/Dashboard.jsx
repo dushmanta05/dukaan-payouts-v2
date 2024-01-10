@@ -2,9 +2,9 @@ const Dashboard = () => {
   return (
     <div className="p-[32px] text-black">
       <div className="flex justify-between ">
-        <h1 className="text-black text-xl">Overview</h1>
-        <button className="w-[137px] flex items-center justify-center h-[36px] bg-white border rounded gap-[16px]">
-          <p className="text-light text-base">Last Month</p>
+        <h1 className="text-customBlack text-xl text-medium">Overview</h1>
+        <button className="w-[137px] flex items-center justify-center h-[36px]  bg-white border rounded gap-[8px]">
+          <p className="text-subtitle font-normal text-base">Last Month</p>
           <svg
             width="16"
             height="16"
@@ -19,20 +19,22 @@ const Dashboard = () => {
           </svg>
         </button>
       </div>
-      <div className="pt-[24px] gap-[20px] flex justify-between">
+      <div className="pt-[24px] gap-[20px] flex flex-col md:flex-row justify-between">
         <div className="bg-white h-[118px] w-full flex flex-col justify-between gap-[24px] p-[20px] rounded shadow-box ">
-          <p className="text-base">Online orders</p>
-          <p className="text-3xl">231</p>
+          <p className="text-subtitle text-base">Online orders</p>
+          <p className="text-3xl text-customBlack font-medium">231</p>
         </div>
         <div className="bg-white h-[118px] w-full flex flex-col gap-[24px] p-[20px] rounded shadow-box">
-          <p className="text-base">Amount received</p>
-          <p className="text-3xl">₹23,92,312.19</p>
+          <p className="text-subtitle text-base">Amount received</p>
+          <p className="text-3xl text-customBlack font-medium">₹23,92,312.19</p>
         </div>
       </div>
       <div className="pt-[32px]">
-        <p className="text-black pb-[20px]">Transactions | This Month</p>
+        <p className="text-customBlack text-xl font-medium pb-[20px]">
+          Transactions | This Month
+        </p>
         <div className="flex flex-col px-[12px] bg-white rounded-lg pb-[24px]">
-          <div className="pt-[12px]   flex flex-col justify-between gap-[12px]">
+          <div className="py-[12px] flex flex-col justify-between gap-[12px] ">
             <div className="flex justify-between items-center">
               <div className="flex justify-start py-[10px] px-[16px] items-center h-[40px] w-[248px] rounded border gap-[8px]">
                 <svg
@@ -47,11 +49,11 @@ const Dashboard = () => {
                     fill="#999999"
                   />
                 </svg>
-                <p>Search by order ID...</p>
+                <p className="text-searchId text-sm">Search by order ID...</p>
               </div>
               <div className="flex items-center gap-[12px]">
                 <div className="flex justify-center h-[36px] gap-[6px] px-[12px] py-[6px] items-center rounded border">
-                  <p>Sort</p>
+                  <p className="text-subtitle text-base">Sort</p>
                   <svg
                     width="16"
                     height="16"
@@ -85,7 +87,7 @@ const Dashboard = () => {
                     />
                   </svg>
                 </div>
-                <div className="flex h-[36px] justify-center gap-[6px] px-[12px] py-[6px] items-center rounded border">
+                <div className="hidden md:flex h-[36px]  justify-center gap-[6px] px-[12px] py-[6px] items-center rounded border">
                   <svg
                     width="20"
                     height="20"
@@ -101,13 +103,17 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-[40px] px-[12px] py-[10px] h-[40px] bg-secondary rounded ">
+          </div>
+          <div className="min-w-[830px] overflow-x-scroll">
+            <div className="flex gap-[40px] px-[12px] py-[10px] h-[48px] bg-secondary rounded ">
               <div className="w-full flex">
-                <p>Order ID</p>
+                <p className="text-subtitle font-normal text-base">Order ID</p>
               </div>
               <div className="w-full flex items-center">
-                <div className="flex justify-start items-center">
-                  <p>Order date</p>
+                <div className="flex justify-start items-center gap-[3px]">
+                  <p className="text-subtitle font-normal text-base">
+                    Order date
+                  </p>
                   <svg
                     width="8"
                     height="8"
@@ -123,11 +129,15 @@ const Dashboard = () => {
                 </div>
               </div>
               <div className="w-full flex justify-end items-center">
-                <p>Order amount</p>
+                <p className="text-subtitle font-normal text-base">
+                  Order amount
+                </p>
               </div>
               <div className="w-full flex justify-end items-center">
-                <div className="flex items-center justify-start">
-                  <p>Transaction fees</p>
+                <div className="flex items-center justify-start gap-[3px]">
+                  <p className="text-subtitle font-normal text-base">
+                    Transaction fees
+                  </p>
                   <svg
                     width="14"
                     height="14"
@@ -164,161 +174,162 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
+            <div className="flex gap-[40px] h-[48px] px-[12px] py-[14px] rounded border-b">
+              <div className="w-full flex">
+                <p className="text-idColor text-sm">#281209</p>
+              </div>
+              <div className="w-full flex items-center">
+                <p className="text-sm text-customBlack">7 July, 2023</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹1,278.23</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹22</p>
+              </div>
+            </div>
+            <div className="flex gap-[40px] h-[48px] px-[12px] py-[14px] rounded border-b ">
+              <div className="w-full flex">
+                <p className="text-idColor text-sm">#281209</p>
+              </div>
+              <div className="w-full flex items-center">
+                <p className="text-sm text-customBlack">7 July, 2023</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹1,278.23</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹22</p>
+              </div>
+            </div>
+            <div className="flex gap-[40px] h-[48px] px-[12px] py-[14px] rounded border-b ">
+              <div className="w-full flex">
+                <p className="text-idColor text-sm">#281209</p>
+              </div>
+              <div className="w-full flex items-center">
+                <p className="text-sm text-customBlack">7 July, 2023</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹1,278.23</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹22</p>
+              </div>
+            </div>
+            <div className="flex gap-[40px] h-[48px] px-[12px] py-[14px] rounded border-b ">
+              <div className="w-full flex">
+                <p className="text-idColor text-sm">#281209</p>
+              </div>
+              <div className="w-full flex items-center">
+                <p className="text-sm text-customBlack">7 July, 2023</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹1,278.23</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹22</p>
+              </div>
+            </div>
+            <div className="flex gap-[40px] h-[48px] px-[12px] py-[14px] rounded border-b ">
+              <div className="w-full flex">
+                <p className="text-idColor text-sm">#281209</p>
+              </div>
+              <div className="w-full flex items-center">
+                <p className="text-sm text-customBlack">7 July, 2023</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹1,278.23</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹22</p>
+              </div>
+            </div>
+            <div className="flex gap-[40px] h-[48px] px-[12px] py-[14px] rounded border-b ">
+              <div className="w-full flex">
+                <p className="text-idColor text-sm">#281209</p>
+              </div>
+              <div className="w-full flex items-center">
+                <p className="text-sm text-customBlack">7 July, 2023</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹1,278.23</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹22</p>
+              </div>
+            </div>
+            <div className="flex gap-[40px] h-[48px] px-[12px] py-[14px] rounded border-b ">
+              <div className="w-full flex">
+                <p className="text-idColor text-sm">#281209</p>
+              </div>
+              <div className="w-full flex items-center">
+                <p className="text-sm text-customBlack">7 July, 2023</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹1,278.23</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹22</p>
+              </div>
+            </div>
+            <div className="flex gap-[40px] h-[48px] px-[12px] py-[14px] rounded border-b ">
+              <div className="w-full flex">
+                <p className="text-idColor text-sm">#281209</p>
+              </div>
+              <div className="w-full flex items-center">
+                <p className="text-sm text-customBlack">7 July, 2023</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹1,278.23</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹22</p>
+              </div>
+            </div>
+            <div className="flex gap-[40px] h-[48px] px-[12px] py-[14px] rounded border-b ">
+              <div className="w-full flex">
+                <p className="text-idColor text-sm">#281209</p>
+              </div>
+              <div className="w-full flex items-center">
+                <p className="text-sm text-customBlack">7 July, 2023</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹1,278.23</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹22</p>
+              </div>
+            </div>
+            <div className="flex gap-[40px] h-[48px] px-[12px] py-[14px] rounded border-b ">
+              <div className="w-full flex">
+                <p className="text-idColor text-sm">#281209</p>
+              </div>
+              <div className="w-full flex items-center">
+                <p className="text-sm text-customBlack">7 July, 2023</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹1,278.23</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹22</p>
+              </div>
+            </div>
+            <div className="flex gap-[40px] h-[48px] px-[12px] py-[14px] rounded border-b ">
+              <div className="w-full flex">
+                <p className="text-idColor text-sm">#281209</p>
+              </div>
+              <div className="w-full flex items-center">
+                <p className="text-sm text-customBlack">7 July, 2023</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹1,278.23</p>
+              </div>
+              <div className="w-full flex justify-end items-center">
+                <p className="text-sm text-customBlack">₹22</p>
+              </div>
+            </div>
           </div>
-          <div className="flex gap-[40px] px-[12px] py-[14px] h-[40px] rounded border-b ">
-            <div className="w-full flex">
-              <p className="text-idColor">#281209</p>
-            </div>
-            <div className="w-full flex items-center">
-              <p>7 July, 2023</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹1,278.23</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹22</p>
-            </div>
-          </div>
-          <div className="flex gap-[40px] px-[12px] py-[14px] h-[40px] rounded border-b ">
-            <div className="w-full flex">
-              <p className="text-idColor">#281209</p>
-            </div>
-            <div className="w-full flex items-center">
-              <p>7 July, 2023</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹1,278.23</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹22</p>
-            </div>
-          </div>
-          <div className="flex gap-[40px] px-[12px] py-[14px] h-[40px] rounded border-b ">
-            <div className="w-full flex">
-              <p className="text-idColor">#281209</p>
-            </div>
-            <div className="w-full flex items-center">
-              <p>7 July, 2023</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹1,278.23</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹22</p>
-            </div>
-          </div>
-          <div className="flex gap-[40px] px-[12px] py-[14px] h-[40px] rounded border-b ">
-            <div className="w-full flex">
-              <p className="text-idColor">#281209</p>
-            </div>
-            <div className="w-full flex items-center">
-              <p>7 July, 2023</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹1,278.23</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹22</p>
-            </div>
-          </div>
-          <div className="flex gap-[40px] px-[12px] py-[14px] h-[40px] rounded border-b ">
-            <div className="w-full flex">
-              <p className="text-idColor">#281209</p>
-            </div>
-            <div className="w-full flex items-center">
-              <p>7 July, 2023</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹1,278.23</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹22</p>
-            </div>
-          </div>
-          <div className="flex gap-[40px] px-[12px] py-[14px] h-[40px] rounded border-b ">
-            <div className="w-full flex">
-              <p className="text-idColor">#281209</p>
-            </div>
-            <div className="w-full flex items-center">
-              <p>7 July, 2023</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹1,278.23</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹22</p>
-            </div>
-          </div>
-          <div className="flex gap-[40px] px-[12px] py-[14px] h-[40px] rounded border-b ">
-            <div className="w-full flex">
-              <p className="text-idColor">#281209</p>
-            </div>
-            <div className="w-full flex items-center">
-              <p>7 July, 2023</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹1,278.23</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹22</p>
-            </div>
-          </div>
-          <div className="flex gap-[40px] px-[12px] py-[14px] h-[40px] rounded border-b ">
-            <div className="w-full flex">
-              <p className="text-idColor">#281209</p>
-            </div>
-            <div className="w-full flex items-center">
-              <p>7 July, 2023</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹1,278.23</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹22</p>
-            </div>
-          </div>
-          <div className="flex gap-[40px] px-[12px] py-[14px] h-[40px] rounded border-b ">
-            <div className="w-full flex">
-              <p className="text-idColor">#281209</p>
-            </div>
-            <div className="w-full flex items-center">
-              <p>7 July, 2023</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹1,278.23</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹22</p>
-            </div>
-          </div>
-          <div className="flex gap-[40px] px-[12px] py-[14px] h-[40px] rounded border-b ">
-            <div className="w-full flex">
-              <p className="text-idColor">#281209</p>
-            </div>
-            <div className="w-full flex items-center">
-              <p>7 July, 2023</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹1,278.23</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹22</p>
-            </div>
-          </div>
-          <div className="flex gap-[40px] px-[12px] py-[14px] h-[40px] rounded border-b ">
-            <div className="w-full flex">
-              <p className="text-idColor">#281209</p>
-            </div>
-            <div className="w-full flex items-center">
-              <p>7 July, 2023</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹1,278.23</p>
-            </div>
-            <div className="w-full flex justify-end items-center">
-              <p>₹22</p>
-            </div>
-          </div>
+
           <div className="flex justify-center items-center gap-[24px] pt-[24px] ">
             <button className="flex gap-[6px] rounded border  items-center pl-[12px] py-[6px] pr-[6px]  ">
               <svg
@@ -338,31 +349,31 @@ const Dashboard = () => {
               Previous
             </button>
             <div className="flex items-center gap-[8px] rounded py-[2px]">
-              <div className=" flex items-center justify-center h-[28px] w-[28px]">
+              <div className="hidden md:flex items-center justify-center h-[28px] w-[28px]">
                 <p className=" text-sm ">1</p>
               </div>
-              <div className=" flex items-center justify-center h-[28px] w-[28px]">
+              <div className="hidden md:flex  items-center justify-center h-[28px] w-[28px]">
                 <p className=" text-sm ">2</p>
               </div>
-              <div className=" flex items-center justify-center h-[28px] w-[28px]">
+              <div className="hidden md:flex items-center justify-center h-[28px] w-[28px]">
                 <p className=" text-sm ">...</p>
               </div>
               <div className=" flex items-center justify-center h-[28px] w-[28px] bg-idColor text-white">
                 <p className=" text-sm ">10</p>
               </div>
-              <div className=" flex items-center justify-center h-[28px] w-[28px]">
+              <div className=" hidden md:flex items-center justify-center h-[28px] w-[28px]">
                 <p className=" text-sm ">11</p>
               </div>
-              <div className=" flex items-center justify-center h-[28px] w-[28px]">
+              <div className=" hidden lg:flex items-center justify-center h-[28px] w-[28px]">
                 <p className=" text-sm ">12</p>
               </div>
-              <div className=" flex items-center justify-center h-[28px] w-[28px]">
+              <div className=" hidden lg:flex items-center justify-center h-[28px] w-[28px]">
                 <p className=" text-sm ">13</p>
               </div>
-              <div className=" flex items-center justify-center h-[28px] w-[28px]">
+              <div className=" hidden xl:flex items-center justify-center h-[28px] w-[28px]">
                 <p className=" text-sm ">14</p>
               </div>
-              <div className=" flex items-center justify-center h-[28px] w-[28px]">
+              <div className=" hidden xl:flex items-center justify-center h-[28px] w-[28px]">
                 <p className=" text-sm ">15</p>
               </div>
             </div>

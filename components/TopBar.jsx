@@ -1,9 +1,42 @@
+import MobileSideBar from "./MobileSideBar";
+import SideBar from "./SIdeBar";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+
 const TopBar = () => {
   return (
     <div className="text-black px-[32px] py-[12px] flex justify-between items-center gap-[16px]">
-      <div className="flex justify-start items-center gap-[16px]">
-        <p>Payments</p>
-        <div className="flex items-center justify-start gap-[6px]">
+      <div className="flex justify-start items-center gap-[16px] ">
+        <div className="flex jusify-start items-center gap-[12px]">
+          <div className="lg:hidden flex">
+            <Sheet>
+              <SheetTrigger className="lg:hidden transition">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="33"
+                  height="33"
+                  viewBox="0 0 24 24"
+                  fill="#4D4D4D"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-menu"
+                >
+                  <line x1="4" x2="20" y1="12" y2="12" />
+                  <line x1="4" x2="20" y1="6" y2="6" />
+                  <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+              </SheetTrigger>
+              <SheetContent side="left" className="bg-primary w-[224px] p-0">
+                <MobileSideBar />
+              </SheetContent>
+            </Sheet>
+          </div>
+
+          <p className="text-customBlack text-opacity-12 text-base">Payments</p>
+        </div>
+
+        <div className="hidden lg:flex items-center justify-start gap-[6px]">
           <svg
             width="14"
             height="14"
@@ -37,10 +70,10 @@ const TopBar = () => {
               </clipPath>
             </defs>
           </svg>
-          <p>How it works</p>
+          <p className="text-subtitle text-xs">How it works</p>
         </div>
       </div>
-      <div className="rounded-md border h-[40px] py-[9px] px-[16px] w-[400px] relative bg-secondary flex justify-start items-center gap-[8px]">
+      <div className="hidden md:flex rounded-md border h-[40px] py-[9px] px-[16px] w-[400px] relative bg-secondary  justify-start items-center gap-[8px]">
         <svg
           className=""
           width="16"
@@ -61,7 +94,7 @@ const TopBar = () => {
             </clipPath>
           </defs>
         </svg>
-        <p>Search features, tutorials, etc.</p>
+        <p className="text-search">Search features, tutorials, etc.</p>
       </div>
       <div className="flex justify-end items-center gap-[8px]">
         <div>
