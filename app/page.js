@@ -1,4 +1,4 @@
-import SideBar from "@/components/SIdeBar";
+import SideBar from "@/components/SideBar";
 import TopBar from "@/components/TopBar";
 import Dashboard from "@/components/Dashboard";
 
