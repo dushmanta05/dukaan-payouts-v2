@@ -1,6 +1,6 @@
 import Image from "next/image";
-import MobileSideBar from "./MobileSideBar";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import MobileSideBar from "../mobile-sidebar/MobileSideBar";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
 const TopBar = () => {
   return (

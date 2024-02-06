@@ -1,6 +1,6 @@
-import SideBar from "@/components/SideBar";
-import TopBar from "@/components/TopBar";
-import Dashboard from "@/components/Dashboard";
+import SideBar from "@/components/sidebar/SideBar";
+import TopBar from "@/components/topbar/TopBar";
+import Dashboard from "@/components/dashboard/Dashboard";
 
 export default function Home() {
   return (

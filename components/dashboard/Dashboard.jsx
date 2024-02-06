@@ -1,7 +1,7 @@
 import Image from "next/image";
-import OrderSummaryCard from "./dashboard/OrderSummaryCard";
-import Transaction from "./dashboard/Transaction";
-import PaginationNumber from "./dashboard/PaginationNumber";
+import OrderSummaryCard from "./OrderSummaryCard";
+import Transaction from "./Transaction";
+import PaginationNumber from "./PaginationNumber";
 
 const Dashboard = () => {
   return (
