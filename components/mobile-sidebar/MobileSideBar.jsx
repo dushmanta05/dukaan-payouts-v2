@@ -5,7 +5,7 @@ const MobileSideBar = () => {
     <div className="flex h-[100vh] w-[224px] bg-primary text-white fixed z-50  py-[16px] px-[10px] gap-[16px] flex-col items-center justify-between">
       <div className="flex flex-col gap-[24px] w-full items-start justify-center">
         <div className="flex justify-evenly px-[8px] items-center w-full gap-[4px]">
-          <Image src="/navbar/image.png" width={39} height={39} />
+          <Image src="/images/navbar/image.png" width={39} height={39} />
           <div className="flex flex-col pl-[6px] w-full">
             <p className="font-medium text-base">Nishayam</p>
             <p className="font-extralight text-sm underline ">Visit Store</p>

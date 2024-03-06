@@ -3,6 +3,17 @@ import MobileSideBar from "../mobile-sidebar/MobileSideBar";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
 const TopBar = () => {
+  const navIcons = [
+    {
+      src: "/images/svg/message-circle.svg",
+      alt: "message icon",
+    },
+    {
+      src: "/images/svg/down-triangle-circle.svg",
+      alt: "dropdown icon",
+    },
+  ];
+
   return (
     <div className="text-black px-[32px] py-[12px] flex justify-between items-center gap-[16px]">
       <div className="flex justify-start items-center gap-[16px]">
@@ -44,22 +55,11 @@ const TopBar = () => {
         <p className="text-search">Search features, tutorials, etc.</p>
       </div>
       <div className="flex justify-end items-center gap-[8px]">
-        <div>
-          <Image
-            src="/images/svg/message-circle.svg"
-            height={40}
-            width={40}
-            alt="message"
-          />
-        </div>
-        <div>
-          <Image
-            src="/images/svg/down-triangle-circle.svg"
-            width={40}
-            height={40}
-            alt="down-triangle-circle"
-          />
-        </div>
+        {navIcons.map((icon, index) => (
+          <div key={index}>
+            <Image src={icon.src} height={40} width={40} alt={icon.alt} />
+          </div>
+        ))}
       </div>
     </div>
   );
