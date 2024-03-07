@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { sidebarAction } from "./sidebarData";
 
-const SideBar = () => {
+const SideBar = ({className}) => {
   return (
-    <div className="hidden lg:flex h-[100vh] w-[224px] bg-primary text-white fixed z-50  py-[16px] px-[10px] gap-[16px] flex-col items-center justify-between">
+    <div className={`${className} h-[100vh] w-[224px] bg-primary text-white fixed z-50  py-[16px] px-[10px] gap-[16px] flex-col items-center justify-between`}>
       <div className="flex flex-col gap-[24px] w-full items-start justify-center">
         <div className="flex justify-evenly px-[8px] items-center w-full gap-[4px]">
           <Image src="/images/navbar/image.png" width={39} height={39} />

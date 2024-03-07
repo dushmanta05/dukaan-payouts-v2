@@ -12,7 +12,7 @@ export default function Home() {
 
       {/* SideBar */}
       <div>
-        <SideBar />
+        <SideBar className="hidden lg:flex" />
       </div>
 
       {/* Dashboard */}

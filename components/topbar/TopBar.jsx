@@ -1,6 +1,6 @@
 import Image from "next/image";
-import MobileSideBar from "../mobile-sidebar/MobileSideBar";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import SideBar from "../sidebar/SideBar";
 
 const TopBar = () => {
   const navIcons = [
@@ -29,7 +29,7 @@ const TopBar = () => {
                 />
               </SheetTrigger>
               <SheetContent side="left" className="bg-primary w-[224px] p-0">
-                <MobileSideBar />
+                <SideBar className="flex" />
               </SheetContent>
             </Sheet>
           </div>
